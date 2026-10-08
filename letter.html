@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Letter From Me — Ilsaa ✦</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="page-letter">
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+  </div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span></div>
+
+  <header class="topbar">
+    <a class="pill brand" href="index.html" data-hover>
+      <span class="brand-ava"></span>
+      <span class="brand-txt">for <b data-site-name>Ilsaa</b></span>
+    </a>
+    <div class="topbar-center">✿ a birthday microsite</div>
+    <nav class="topnav" aria-label="main">
+      <a class="pill" href="index.html" data-hover>HOME</a>
+      <a class="pill" href="wish.html" data-hover>WISH</a>
+      <a class="pill active" href="letter.html" data-hover>LETTER</a>
+      <a class="pill" href="photos.html" data-hover>PHOTOS</a>
+      <a class="pill" href="message.html" data-hover>MESSAGE</a>
+    </nav>
+  </header>
+
+  <main class="stub">
+    <section class="stub-card">
+      <p class="stub-kicker">✦ chapter two</p>
+      <h2>A LETTER<br />FROM ME<span class="dot">.</span></h2>
+
+      <!-- ============ 🐧 gate: win to open the letter ============ -->
+      <section class="pgame" id="pgame" aria-label="penguin pop mini-game">
+        <p class="pgame-title">🐧 PENGUIN POP</p>
+        <p class="pgame-sub" id="pgameSub">the letter is sealed — win Penguin Pop to open it! poke 10 penguins in 25s 🧊</p>
+        <div class="pgame-hud">
+          <span class="hud-pill">score <b id="pgScore">0</b>/10</span>
+          <span class="hud-pill">time <b id="pgTime">25</b>s</span>
+          <span class="hud-pill">best <b id="pgBest">0</b></span>
+        </div>
+        <div class="pgame-arena" id="pgArena">
+          <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+          <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+          <button class="pg-peng" id="pgPeng" aria-label="tap the penguin">🐧</button>
+        </div>
+        <button class="chip solid pg-play" id="pgBtn" data-hover>PLAY ▶</button>
+      </section>
+      <!-- ============ /penguin pop ============ -->
+
+      <!-- ============ the real letter (opens on win) ============ -->
+      <div class="paper" id="letterPaper">
+        <p>Dear <b data-site-name>Ilsaa</b>,</p>
+        <p>
+          I know many people have told you this, and honestly, I&rsquo;ve told you
+          countless times myself: <b>you are much stronger than you think you are.</b>
+        </p>
+        <p>
+          But sometimes, even I forget that you&rsquo;re human too. Even you need a
+          place to cry, a shoulder to lean on, and someone to help carry the weight
+          when things get too heavy. You come to us when you need support, but Ilsaa,
+          you&rsquo;ve handled so much on your own that it constantly reminds me of
+          how incredibly strong you are.
+        </p>
+        <p>
+          <em>(And no, this does NOT mean you can&rsquo;t come to me! You definitely
+          can. I&rsquo;m always there for you, just like you&rsquo;ve always been
+          there for me.)</em>
+        </p>
+        <p>
+          You&rsquo;ve handled so much by yourself, and I know you&rsquo;ll continue
+          to face every challenge ahead with the same courage and strength.
+        </p>
+        <p>
+          And yes, your masti, your jokes, your drama, your tantrums, your sweet talks,
+          your adorable gaaliyan, and most importantly, your vlog-style stories —
+          <b>you have no idea how much I love them</b> and how much they entertain me.
+          I genuinely can&rsquo;t describe it. They&rsquo;re so fun that I don&rsquo;t
+          even want to skip a single second of them.
+        </p>
+        <p>
+          So please, stay this charming girl forever. Grow up as much as you want.
+          Become as mature as you want. But with me, stay this same childish,
+          fun-loving girl for as long as possible… at least until I do something stupid!
+        </p>
+        <p>
+          But Ilsaa, truly, you are too awesome, too brilliant, too fabulous, too great,
+          too fantastic, too exquisite, too stunning — and honestly, there aren&rsquo;t
+          enough adjectives in the dictionary to describe how amazing you are.
+        </p>
+        <p>
+          So keep smiling, don&rsquo;t cry too much, and become as successful as
+          you&rsquo;ve always dreamed of being.
+        </p>
+        <p>
+          And yes, I&rsquo;d happily be your patient any day. <em>(Haan, thoda dar ka
+          mahaul toh rahega, but it&rsquo;s okay. Tere liye toh jaan bhi de denge.
+          Yeh toh sirf ek-do daant ki baat hai!)</em>
+        </p>
+        <p>Baaki, tu toh <b data-site-name>Ilsaa</b> hai… Ilsaa.</p>
+        <p class="verse">
+          Yahan bhi hoga, wahan bhi hoga,<br />
+          Ab toh saare jahaan mein hoga,<br />
+          Kya tera hi jalwa!
+        </p>
+        <p class="sign">Happy Birthday Gadhiiii! 🎂</p>
+      </div>
+      <!-- ============ /the real letter ============ -->
+
+      <div class="stub-actions">
+        <a class="chip solid" href="photos.html" data-hover>SEE YOUR PHOTOS →</a>
+        <a class="chip" href="index.html" data-hover>← BACK HOME</a>
+        <button class="btn-circle" id="musicBtn" data-hover aria-label="toggle background music" title="background music">
+          <span class="eq"><i></i><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">Happy Birthday Ilsaa</footer>
+
+  <div class="confetti" id="pgConf" aria-hidden="true"></div>
+
+  <audio id="bgm" src="assets/music/birthday.mp3" loop preload="none"></audio>
+  <script src="assets/js/config.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/letter.js"></script>
+</body>
+</html>
 
