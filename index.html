@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Ilsaa ✦</title>
+  <meta name="description" content="A little birthday world made with love — for the most amazing girl." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="page-home">
+
+  <!-- ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span></div>
+
+  <!-- top bar -->
+  <header class="topbar">
+    <a class="pill brand" href="index.html" data-hover>
+      <span class="brand-ava"></span>
+      <span class="brand-txt">for <b data-site-name>Ilsaa</b></span>
+    </a>
+    <div class="topbar-center">✿ a birthday microsite</div>
+    <nav class="topnav" aria-label="main">
+      <a class="pill active" href="index.html" data-hover>HOME</a>
+      <a class="pill" href="wish.html" data-hover>WISH</a>
+      <a class="pill" href="letter.html" data-hover>LETTER</a>
+      <a class="pill" href="photos.html" data-hover>PHOTOS</a>
+      <a class="pill" href="message.html" data-hover>MESSAGE</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <!-- left: big type (split so mobile can put her between title & blurb) -->
+    <div class="hero-left">
+      <section class="hero-copy">
+        <p class="eyebrow">✦ for the most amazing girl</p>
+        <h1 class="display">
+          <span class="line">HAPPY</span>
+          <span class="line">BIRTHDAY</span>
+          <span class="line" data-site-name>Ilsaa<i class="dot">.</i></span>
+        </h1>
+      </section>
+      <section class="hero-after">
+        <p class="blurb">
+          Happy birthday to the most amazing girl — this whole little world is yours today.
+          Move your cursor&hellip; <em>she&rsquo;s watching you.</em>
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="wish.html" data-hover>OPEN YOUR SURPRISE <span class="arr">→</span></a>
+          <button class="btn-circle" id="musicBtn" data-hover aria-label="toggle background music" title="background music">
+            <span class="eq"><i></i><i></i><i></i><i></i></span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- center: cursor-tracking character -->
+    <section class="stage" id="stage" aria-label="animated character watching your cursor">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <div class="char-anchor">
+      <div class="char-tilt" id="charTilt">
+        <figure class="char" id="char">
+          <video id="charVid" class="char-vid"
+                 src="assets/video/head-turn.mp4"
+                 poster="assets/img/char-poster.jpg"
+                 muted playsinline preload="auto"
+                 aria-label="A 3D avatar of Ilsaa turning her head, following your cursor"></video>
+        </figure>
+      </div>
+      </div>
+      <span class="orbit orbit-a" aria-hidden="true"></span>
+      <span class="orbit orbit-b" aria-hidden="true"></span>
+      <span class="spark spark-1" aria-hidden="true">✦</span>
+      <span class="spark spark-2" aria-hidden="true">✦</span>
+      <span class="spark spark-3" aria-hidden="true">✦</span>
+    </section>
+
+    <!-- right column intentionally empty -->
+  </main>
+
+  <!-- bottom-right: quick chapter ribbon (replaces the old card deck) -->
+  <aside class="quicknav" aria-label="explore the site">
+    <a class="qn" href="wish.html" data-hover><span class="qn-ico">🎁</span><span class="qn-lbl">MY WISH</span></a>
+    <a class="qn" href="letter.html" data-hover><span class="qn-ico">✉️</span><span class="qn-lbl">THE LETTER</span></a>
+    <a class="qn" href="photos.html" data-hover><span class="qn-ico">📸</span><span class="qn-lbl">PHOTOS</span></a>
+    <a class="qn" href="message.html" data-hover><span class="qn-ico">💌</span><span class="qn-lbl">MESSAGE</span></a>
+  </aside>
+
+  <footer class="foot">Happy Birthday Ilsaa</footer>
+
+  <audio id="bgm" src="assets/music/birthday.mp3" loop preload="none"></audio>
+  <script src="assets/js/config.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
+</body>
+</html>
