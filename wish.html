@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Wish For You — Ilsaa ✦</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="page-wish">
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+  </div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span></div>
+
+  <header class="topbar">
+    <a class="pill brand" href="index.html" data-hover>
+      <span class="brand-ava"></span>
+      <span class="brand-txt">for <b data-site-name>Ilsaa</b></span>
+    </a>
+    <div class="topbar-center">✿ a birthday microsite</div>
+    <nav class="topnav" aria-label="main">
+      <a class="pill" href="index.html" data-hover>HOME</a>
+      <a class="pill active" href="wish.html" data-hover>WISH</a>
+      <a class="pill" href="letter.html" data-hover>LETTER</a>
+      <a class="pill" href="photos.html" data-hover>PHOTOS</a>
+      <a class="pill" href="message.html" data-hover>MESSAGE</a>
+    </nav>
+  </header>
+
+  <main class="stub">
+    <p class="stub-kicker">✦ chapter one</p>
+    <h2 class="msg-title">MY WISH<br />FOR YOU<span class="dot">.</span></h2>
+
+    <!-- the hunt: progress + hint -->
+    <div class="msg-hunt" id="msgHunt">
+      <p class="hunt-line" id="huntLine">Your birthday squad is hiding on this page — catch all <b>3</b> to unlock your wish!</p>
+      <div class="hunt-dots" aria-hidden="true">
+        <span class="hdot" data-c="penguin">🐧</span>
+        <span class="hdot" data-c="butterfly">🦋</span>
+        <span class="hdot" data-c="duck">🦆</span>
+      </div>
+    </div>
+
+    <section class="msg-card" id="msgCard">
+      <!-- locked state -->
+      <div class="msg-sealed" id="msgSealed">
+        <div class="gift" aria-hidden="true">🎁</div>
+        <p class="sealed-note">your wish is wrapped up tight —<br />the squad is guarding it 🐧🦋🦆</p>
+      </div>
+
+      <!-- revealed wish -->
+      <div class="wish-reveal" id="wishReveal">
+        <p class="mp mp1">Dear <span data-site-name>Ilsaa</span>,</p>
+        <p class="mp mp2">
+          <b>Happy Birthday to the most caring stupid idiot gadhi 🐧 Penguin–Butterfly 🦋 chudail titli!</b>
+          You have the best day, okay?
+        </p>
+        <p class="mp mp3">
+          Mereko pata hai ki tereko tera birthday abhi itne dino se nahi chahiye tha —
+          lekin ab aa gaya hai, toh abeyy, mazee karo! Khush ho jao aur bahut ache se
+          celebrate karo. Crazy-crazy reels banao, crazy-crazy gaano pe nacho, pagalpanti
+          karo — <b>lekin most importantly, sabse jyada khush raho apni life mein.</b>
+        </p>
+        <p class="mp mp4">
+          I hope, I wish and I pray ke you have the best life ahead — and you never look
+          behind at whoever or whatever is left. You just look straight ahead to achieve
+          and conquer new things. 🦋
+        </p>
+        <p class="mp mp5 sign">Happy Birthday, ILSAA&nbsp;♡</p>
+      </div>
+    </section>
+
+    <div class="stub-actions">
+      <a class="chip solid" href="letter.html" data-hover>READ THE LETTER →</a>
+      <a class="chip" href="index.html" data-hover>← BACK HOME</a>
+      <button class="btn-circle" id="musicBtn" data-hover aria-label="toggle background music" title="background music">
+        <span class="eq"><i></i><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </main>
+
+  <!-- the birthday squad, hiding around the page -->
+  <button class="critter cr-penguin" id="cr-penguin" data-hover aria-label="catch the penguin">🐧</button>
+  <button class="critter cr-butterfly" id="cr-butterfly" data-hover aria-label="catch the butterfly">🦋</button>
+  <button class="critter cr-duck" id="cr-duck" data-hover aria-label="catch the duck">🦆</button>
+
+  <!-- catch shout + confetti layer -->
+  <div class="catch-pop" id="catchPop" aria-hidden="true"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <footer class="foot">Happy Birthday Ilsaa</footer>
+
+  <audio id="bgm" src="assets/music/birthday.mp3" loop preload="none"></audio>
+  <script src="assets/js/config.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/wish.js"></script>
+</body>
+</html>

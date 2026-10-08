@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photos Of You — Ilsaa ✦</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="page-photos">
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+  </div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span></div>
+
+  <header class="topbar">
+    <a class="pill brand" href="index.html" data-hover>
+      <span class="brand-ava"></span>
+      <span class="brand-txt">for <b data-site-name>Ilsaa</b></span>
+    </a>
+    <div class="topbar-center">✿ a birthday microsite</div>
+    <nav class="topnav" aria-label="main">
+      <a class="pill" href="index.html" data-hover>HOME</a>
+      <a class="pill" href="wish.html" data-hover>WISH</a>
+      <a class="pill" href="letter.html" data-hover>LETTER</a>
+      <a class="pill active" href="photos.html" data-hover>PHOTOS</a>
+      <a class="pill" href="message.html" data-hover>MESSAGE</a>
+    </nav>
+  </header>
+
+  <main class="stub">
+    <p class="stub-kicker">✦ chapter three · her gallery</p>
+    <h2 class="msg-title">SEE YOUR PHOTOS<br />AND ADORE YOURSELF<span class="dot">.</span></h2>
+
+    <!-- ============ 🦆 duck chase: the nice little task ============ -->
+    <section class="pgame" id="dgame" aria-label="duck chase mini-game">
+      <p class="pgame-title">🦆 DUCK CHASE</p>
+      <p class="pgame-sub" id="duckSub">the gallery is locked — catch <b>5 ducks</b> in 30s to open it! they swim fast, tap them mid-swim 🌊</p>
+      <div class="pgame-hud">
+        <span class="hud-pill">caught <b id="dkScore">0</b>/5</span>
+        <span class="hud-pill">time <b id="dkTime">30</b>s</span>
+        <span class="hud-pill">best <b id="dkBest">0</b></span>
+      </div>
+      <div class="pond" id="pond">
+        <button class="duck" id="duck" aria-label="catch the duck">🦆</button>
+      </div>
+      <button class="chip solid pg-play" id="dkBtn" data-hover>RELEASE THE DUCKS ▶</button>
+    </section>
+
+    <!-- ============ the gallery (opens on win) ============ -->
+    <div id="galleryZone">
+      <!-- ============
+           her photos live in assets/img/photos/ (p1–p8.jpg)
+           to swap one, just replace the file or the url below
+           ============ -->
+      <div class="photo-grid">
+        <figure class="frame" data-cap="that smile 😊" style="background-image:url('assets/img/photos/p1.jpg')"></figure>
+        <figure class="frame" data-cap="flower in her hair ✿" style="background-image:url('assets/img/photos/p2.jpg')"></figure>
+        <figure class="frame" data-cap="main character ✨" style="background-image:url('assets/img/photos/p3.jpg')"></figure>
+        <figure class="frame" data-cap="pout mode 💋" style="background-image:url('assets/img/photos/p4.jpg')"></figure>
+        <figure class="frame" data-cap="nature girl 🌿" style="background-image:url('assets/img/photos/p5.jpg')"></figure>
+        <figure class="frame" data-cap="caught in 4k" style="background-image:url('assets/img/photos/p6.jpg')"></figure>
+        <figure class="frame" data-cap="soft smile" style="background-image:url('assets/img/photos/p7.jpg')"></figure>
+        <figure class="frame" data-cap="my favourite one ♡" style="background-image:url('assets/img/photos/p8.jpg')"></figure>
+      </div>
+      <!-- ============ /gallery ============ -->
+
+      <!-- the squad sitting together, admiring her photos -->
+      <div class="scene" aria-hidden="true">
+        <div class="scene-hearts">
+          <span>❤</span><span>❤</span><span>❤</span><span>❤</span><span>❤</span>
+        </div>
+        <div class="scene-friends">
+          <span>🐧</span><span>🦆</span><span>🦋</span>
+        </div>
+        <p class="scene-cap">the squad admiring the birthday girl ♡</p>
+      </div>
+    </div>
+
+    <div class="stub-actions">
+      <a class="chip solid" href="message.html" data-hover>ONE LAST THING →</a>
+      <a class="chip" href="index.html" data-hover>← BACK HOME</a>
+      <button class="btn-circle" id="musicBtn" data-hover aria-label="toggle background music" title="background music">
+        <span class="eq"><i></i><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </main>
+
+  <!-- critters crawling here and there across the page -->
+  <div class="crawl-layer" aria-hidden="true">
+    <span class="crawl c1">🐧</span>
+    <span class="crawl c2">🦋</span>
+    <span class="crawl c3">🦆</span>
+    <span class="crawl c4">🐧</span>
+  </div>
+
+  <div class="confetti" id="dkConf" aria-hidden="true"></div>
+
+  <footer class="foot">Happy Birthday Ilsaa</footer>
+
+  <audio id="bgm" src="assets/music/gallery.mp3" loop preload="none"></audio>
+  <script src="assets/js/config.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/photos.js"></script>
+</body>
+</html>
